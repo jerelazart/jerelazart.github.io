@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clon QR Santander</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            width: 800px;
+            padding: 20px;
+            border: 1px solid #E0E0E0;
+            border-radius: 8px;
+        }
+
+        .text-content {
+            max-width: 450px;
+        }
+
+        h1 {
+            font-size: 28px;
+            color: #000;
+        }
+
+        h1 span {
+            font-weight: bold;
+            ; /* Color rojo de Santander */
+        }
+
+        .instructions {
+            margin: 20px 0;
+            font-size: 16px;
+        }
+
+        .instructions strong {
+            color: #e30613;
+        }
+
+        ol {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        ol li {
+            margin-bottom: 10px;
+        }
+
+        .note {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .alternative {
+            font-size: 16px;
+            color: #333;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .alternative img {
+            width: 24px;
+            height: 24px;
+        }
+
+        .alternative a {
+            color: #e30613;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .alternative a:hover {
+            text-decoration: underline;
+        }
+
+        .qr-code img {
+            width: 160px;
+            height: 160px;
+                    
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #e0e0e0;
+            margin: 20px 0;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="text-content">
+        <h1>Escaneá el <span>código QR</span> y seguí desde tu celular</h1>
+
+        <div class="instructions">
+            <strong>Cómo escanear el código QR:</strong>
+            <ol>
+                <li>Abrí la cámara de tu celular.</li>
+                <li>Apuntá hacia la pantalla como si fueras a sacar una foto, ubicando el código en el centro.</li>
+                <li>Cuando la cámara lo detecte, te va a mostrar un link.</li>
+                <li>Hacé click ¡y listo!</li>
+            </ol>
+        </div>
+
+        <p class="note">Si la cámara de tu celular no puede escanear código QR, es necesario que descargues una app con esa funcionalidad.</p>
+
+        <hr>
+
+        <div class="alternative">
+            <img src="casljjbasljblcsjbjlc.png" alt="Icono de celular">
+            <p>O ingresá en <a href="#">tienda.santander.com.ar/productos/</a> en el navegador de tu celular y seguí los pasos para obtener tu producto.</p>
+        </div>
+    </div>
+
+    <div class="qr-code">
+        <img src="descarga.png" alt="Código QR">
+    </div>
+</div>
+
+</body>
+</html>
